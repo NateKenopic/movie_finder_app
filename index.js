@@ -13,7 +13,6 @@ function getMovie() {
     } else {
         fetch(url).then((resp) => resp.json()).then((data) => {
             if (data.Response == "True") {
-                console.log(data);
                 if (data.Type == "movie") {
                     result.innerHTML = `
                         <div class="info">
